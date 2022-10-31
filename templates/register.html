@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% block content %}
+        <form action="{{url_for('register')}}" method="POST">
+
+           <h2>Create an Account</h2>
+
+           <br>
+          <div class="form_group">
+            <label for="first-name" class="form_label">First Name</label>
+            <input type="text" name="first_name" id="first_name" class="first-name" placeholder="first name" required/>
+          </div>
+
+          <div class="form_group">
+            <label for="last-name" class="form_label">Last Name</label>
+            <input type="text" name="last_name" id="last_name" class="last-name" placeholder="last name" required/>
+          </div>
+
+          <div class="form_group">
+            <label for="country" class="form_label">Country</label>
+            <input type="text" name="country" id="country" class="country" placeholder="country" required/>
+          </div>
+
+          <div class="form_group">
+            <label for="email" class="form_label">Email</label>
+            <input type="text" name="email" id="email" class="email" placeholder="email" required/>
+          </div>
+
+          <div class="form_group">
+            <label for="gender" class="form_label">Gender</label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="not to say">Prefer Not To Say</option>
+            </select>
+          </div>
+
+          <div class="form_group">
+            <label for="username" class="form_label">Username</label>
+            <input type="text" name="username" id="username" class="username" placeholder="username" required/>
+          </div>
+
+          <div class="form_group">
+            <label for="password" class="form_label">Password</label>
+            <input type="text" name="password" id="password" class="password" placeholder="password" required/>
+          </div>
+
+          <div class="form_group">
+            <label for="confirm_password" class="form_label">Confirm Password</label>
+            <input type="text" name="confirm_password" id="confirm_password" class="confirm_password" placeholder="confirm password" required/>
+          </div>
+
+          <button class="btn"><h3><b>Sign Up</h3></button></b>
+
+          <h2><p>Already have an account? <a href="{{url_for('login')}}"><b>Log In</b></a></p></h2>
+        </form>
+
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+        <!-- <div class="mb-3"> -->
+          <!-- <label for="formGroupExampleInput" class="form-label">First Name</label> -->
+          <!-- <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder"> -->
+        <!-- </div> -->
+        <!-- <div class="mb-3"> -->
+          <!-- <label for="formGroupExampleInput2" class="form-label">Last Name</label> -->
+          <!-- <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder"> -->
+        <!-- </div> -->
+        <!-- <div class="mb-3"> -->
+          <!-- <label for="formGroupExampleInput2" class="form-label">Country</label> -->
+          <!-- <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholde"> -->
+        <!-- </div> -->
+        <!-- <div class="mb-3"> -->
+          <!-- <label for="formGroupExampleInput2" class="form-label">Email</label> -->
+          <!-- <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholde"> -->
+        <!-- </div> -->
+        <!-- <select class="form-control"> -->
+          <!-- <option>Male</option> -->
+        <!-- </select> -->
+        <!-- <select class="form-control"> -->
+          <!-- <option>Female</option> -->
+        <!-- </select> -->
+        <!-- <select class="form-control"> -->
+          <!-- <option>Dont Identify</option> -->
+        <!-- </select> -->
+        <!-- <select class="form-control"> -->
+          <!-- <option>Default select</option> -->
+        <!-- </select> -->
+        <!-- <div class="mb-3"> -->
+          <!-- <label for="formGroupExampleInput2" class="form-label">Username</label> -->
+          <!-- <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholde"> -->
+        <!-- </div> -->
+        <!-- <div class="mb-3"> -->
+          <!-- <label for="formGroupExampleInput2" class="form-label">Password</label> -->
+          <!-- <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholde"> -->
+        <!-- </div> -->
+        <!-- <div class="mb-3"> -->
+          <!-- <label for="formGroupExampleInput2" class="form-label">Confirm Password</label> -->
+          <!-- <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholde"> -->
+        <!-- </div> -->
+{% endblock content %}

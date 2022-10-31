@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --medium-font-size: 1.2em;
+    --big-font-size: 2.5em;
+    --input-padding: 10px 25px;
+    --border-radius: 8px;
+    --margin-bottom: 10px;
+    --margin-top: ;
+    --padding: 20px;
+    --border: 2px solid grey;
+    --misc-color: steelblue;
+    --custom-color: grey;
+}
+
+body{
+    /* display: flex; */
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 100%;
+    min-height: 400px;
+    margin: auto auto;
+    color: rgb(14, 10, 10);
+    position: relative;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.form{
+    width: 100%;
+    margin: 0 auto;
+    padding: var(--padding);
+    margin-top: 10%;
+    justify-content: center;
+    margin-left: auto;
+    margin-top: auto;
+    /* margin-left: auto 30%; */
+}
+
+.form_group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input{
+    padding: var(--input-padding);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--margin-bottom);
+    transition: 0.3s;
+}
+
+select{
+    padding: var(--input-padding);
+    border-radius: var(--border-radius);
+    border: var(--border);
+}
+
+.btn:hover{
+    background: rgb(24, 90, 145);
+    transition: 0.3s;
+}
+
+.btn{
+    margin-top: 8px;
+    width: 50%;
+    border: none;
+    padding: 14px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    background-color: var(--misc-color);
+    color: white;
+}
+
+.form_label{
+    color: rgb(17, 14, 14);
+    font-size: var(--medium-font-size);
+    color: rgb(17, 14, 14);
+}
+
+input::placeholder{
+    font-size: medium;
+}
+
+textarea::placeholder{
+    font-size: var(--medium-font-size);
+}
+
+input:focus{
+    outline-color: grey;
+    transition: 0.3s;
+}
+
+textarea:focus{
+    outline-color: grey;
+    transition: 0.3s;
+}
+
+#message{
+    border: 2px solid steelblue;
+    border-radius: var(--border-radius);
+    padding: var(--input-padding);
+
+}
+
+/* Nav bar styles */
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-item a{
+    /* display: flex; */
+    justify-content: space-around;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* footer style */
+footer{
+    display: flex;
+    justify-content: center;
+}
